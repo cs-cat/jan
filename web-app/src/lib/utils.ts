@@ -36,7 +36,7 @@ export function disableIndentedCodeBlockPlugin() {
       // Convert indented code blocks (nodes without lang or meta property)
       // to plain text
       // Check if the parent exists so we can replace the node safely
-      if (!node.lang && !node.meta && parent && typeof index === 'number') {
+      if (node.lang === undefined && parent && typeof index === 'number') {
         const nodePosition: Position | undefined = node.position
         const textNode: Text = {
           type: 'text',
