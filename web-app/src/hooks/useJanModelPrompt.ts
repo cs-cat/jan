@@ -24,7 +24,7 @@ export const useJanModelPromptDismissed =
     )
   )
 
-const TARGET_VERSION = '0.7.6'
+const TARGET_VERSION = '0.7.8'
 
 export const useJanModelPrompt = () => {
   const { dismissed, setDismissed } = useJanModelPromptDismissed()
